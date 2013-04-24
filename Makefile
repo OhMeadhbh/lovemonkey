@@ -1,6 +1,6 @@
 # Makefile
 
-MODULES = mysql less jshint@0.9.1 recess uglify-js nodify-webcap nodify-persist nodify-approute node-props nodify-logger underscore connect
+MODULES = mysql nodify-webcap nodify-persist nodify-approute node-props nodify-logger underscore connect
 BOOTSTRAP = https://github.com/twitter/bootstrap/archive/v2.0.4.zip 
 BOOTSTRAP_DIR = bootstrap-2.0.4
 
