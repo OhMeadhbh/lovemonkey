@@ -9,7 +9,7 @@
           "host": "localhost",
           "database": "lovemonkey",
           "user": "lovemonkey",
-          "password": "sweb7MER"
+          "password": ""
         },
         "collections": {
           "user": "src/collection_user"
