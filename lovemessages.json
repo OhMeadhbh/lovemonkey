@@ -1,0 +1,15 @@
+{
+  "I": {
+    "logini": "Logger initializated",
+    "mugini": "UUID generator initialized",
+    "appini": "Initializing app %s"
+  },
+  "S": {
+    "daoini": "MySQL DAO initialized",
+    "auth": "Auth client initialized"
+  },
+  "F": {
+    "daoini": "Failure initializing DAO",
+    "auth": "Failure initializing auth client"
+  }
+}

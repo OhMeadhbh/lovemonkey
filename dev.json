@@ -1,0 +1,54 @@
+{
+  "persist": {
+    "log": {
+      "level": 1
+    },
+    "providers": {
+      "localdb": {
+        "mysql": {
+          "host": "localhost",
+          "database": "lovemonkey",
+          "user": "lovemonkey",
+          "password": "sweb7MER"
+        },
+        "collections": {
+          "user": "src/collection_user"
+        },
+        "drop": true
+      }
+    }
+  },
+  "logger": {
+    "facility": "LOVE",
+    "messages_path": "lovemessages.json"
+  },
+  "start": [ "main" ],
+  "apps": {
+    "main": {
+      "info": {
+        "title": "lovemonkey.meadhbh.org",
+        "copy": "Copyright &copy; 2013 <a href=\"http://www.smithee.us/\">Smithee, Spelvin, Agnew &amp; Plinge, Inc.</a>, All Rights Reserved.<br/><a href=\"/about/tou\">Terms of Use</a>",
+        "base": "http://lovemonkey.meadhbh.org/"
+      },
+      "template": {
+        "path": "templates"
+      },
+      "favicon": {
+        "path": "static/favicon.ico"
+      },
+      "access": {
+        "path": "lovemonkey_access.csv",
+        "format": "\":date\",\":req[x-forwarded-for]\",\":method\",\":status\",\":req[host]\",\":url\",\":referrer\",\":user-agent\""
+      },
+      "static": {
+        "path": "static",
+        "maxAge": 14400000
+      },
+      "source": "./src/logic_main",
+      "listen": {
+        "port": 9010,
+        "host": "127.0.0.1"
+      }
+    }
+  }
+}

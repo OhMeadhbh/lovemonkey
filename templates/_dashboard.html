@@ -1,0 +1,72 @@
+<div class="container">
+  <div class="row">
+    <div class="span12">
+      <div id="dash-generator">
+        <h1>Love Generator</h1>
+        <div class="form-inline">
+          <input id="who" type="text" class="input-medium" placeholder="Who do you love?"/>
+          <input id="why" type="text" class="input-large" placeholder="Why do you love them?"/>
+          <label class="checkbox"><input id="private" type="checkbox">&nbsp;Private?</label>
+          <button class="btn">Button o' Love</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="span12">
+      <div id="dash-who-loves-ya-baby">
+        <h1>Who loves ya, baby!?</h1>
+        <table class="table table-condensed">
+          <thead>
+            <tr>
+              <td class="from">from</td>
+              <td class="to">to</td>
+              <td class="when">when</td>
+              <td class="why">why?</td>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each lovesyou}}
+            <tr onclick="location.href='#/love/{{id}}'">
+              <td class="from"><input type="text" value="{{from}}" readonly="readonly"/></td>
+              <td class="to"><input type="text" value="{{to}}"/></td>
+              <td class="when"><input type="text" value="{{when}}"/></td>
+              <td class="why"><input type="text" value="{{why}}"></td>
+            </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="span12">
+      <div id="dash-objects-of-my-affection">
+        <h1>Whom do you love?</h1>
+        <table class="table table-condensed">
+          <thead>
+            <tr>
+              <td class="from">from</td>
+              <td class="to">to</td>
+              <td class="when">when</td>
+              <td class="why">why?</td>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each youlove}}
+            <tr onclick="location.href='#/love/{{id}}'">
+              <td class="from"><input type="text" value="{{from}}" readonly="readonly"/></td>
+              <td class="to"><input type="text" value="{{to}}"/></td>
+              <td class="when"><input type="text" value="{{when}}"/></td>
+              <td class="why"><input type="text" value="{{why}}"></td>
+            </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</div>
